@@ -20,7 +20,12 @@ const Pais=({ resultado }) => {
       setcapital(e.governo.capital.nome);
       setregion(e.localizacao.regiao.nome);
       setarea(e.area.total);
-      
+
+    if(nombre === "El Salvador")
+      {
+        setbanderapais("require('/imagenes/ElSalvador.jpg')");
+      }
+
 
       switch({nombre})
         {
@@ -67,6 +72,7 @@ const Pais=({ resultado }) => {
       })
     });
   });
+  
 
       if(nombre === "El Salvador")
       {
